@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-[#F5EFE7] text-[#213555]">
+    <!-- Navbar -->
+    <nav class="fixed w-full top-0 z-50 glass-effect px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold text-[#3E5879]">John Banega Don</div>
+            <button id="menu-toggle" class="lg:hidden text-[#213555] text-3xl">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="menu" class="hidden lg:flex space-x-6">
+                <li><a href="#about" class="hover:text-[#D8C4B6]">About</a></li>
+                <li><a href="#education" class="hover:text-[#D8C4B6]">Education</a></li>
+                <li><a href="#skills" class="hover:text-[#D8C4B6]">Skills</a></li>
+                <li><a href="#projects" class="hover:text-[#D8C4B6]">Projects</a></li>
+                <li><a href="#experience" class="hover:text-[#D8C4B6]">Experience</a></li>
+                <li><a href="#awards" class="hover:text-[#D8C4B6]">Awards</a></li>
+                <li><a href="#contact" class="hover:text-[#D8C4B6]">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="about" class="mt-10 pt-20 text-center fade-in">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-extrabold text-[#3E5879]">Hello! I am John Don</h1>
+            <p class="mt-4 text-lg">I'm a passionate web developer dedicated to creating user-friendly websites.</p>
+            <img src="photo.jpg" alt="Hero Image" class="mx-auto mt-6 rounded-full shadow-xl" width="250" height="250">
+            <button src="cv.pdf" class="mt-10 px-6 py-3 bg-[#213555] text-white rounded-md hover:bg-[#D8C4B6]">Download CV</button>
+        </div>
+    </header>
+
+    <!-- Education Section -->
+    <section id="education" class="mt-20 py-10 px-6 bg-[#D8C4B6] fade-in">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-[#213555]">Education <i class="fa-solid fa-graduation-cap"></i></h2>
+            <div class="grid md:grid-cols-2 gap-6 mt-8">
+                <div class="p-6 shadow-xl rounded-xl bg-white hover:bg-[#F5EFE7]">
+                    <h3 class="text-xl font-semibold">Bachelor's in Computer Science</h3>
+                    <p class="mt-2">University of XYZ (2018 - 2022)</p>
+                    <p class="mt-4">Graduated with Honors, specializing in Web Development and User Experience Design.</p>
+                </div>
+                <div class="p-6 shadow-xl rounded-xl bg-white hover:bg-[#F5EFE7]">
+                    <h3 class="text-xl font-semibold">High School Diploma</h3>
+                    <p class="mt-2">ABC High School (2016 - 2018)</p>
+                    <p class="mt-4">Focus on Computer Science, Mathematics, and Software Development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-10 px-6 fade-in">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-[#213555]">Skills <i class="fa-solid fa-screwdriver-wrench"></i></h2>
+            <div class="grid md:grid-cols-3 gap-6 mt-8">
+                <div class="p-4 shadow-xl rounded-xl bg-white hover:bg-[#D8C4B6] text-center">
+                    <i class="fas fa-code text-4xl text-[#3E5879]"></i>
+                    <h3 class="text-lg font-semibold mt-4">Web Development</h3>
+                    <p class="mt-2">HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="p-4 shadow-xl rounded-xl bg-white hover:bg-[#D8C4B6] text-center">
+                    <i class="fas fa-database text-4xl text-[#3E5879]"></i>
+                    <h3 class="text-lg font-semibold mt-4">Database Management</h3>
+                    <p class="mt-2">MySQL, MongoDB</p>
+                </div>
+                <div class="p-4 shadow-xl rounded-xl bg-white hover:bg-[#D8C4B6] text-center">
+                    <i class="fas fa-tools text-4xl text-[#3E5879]"></i>
+                    <h3 class="text-lg font-semibold mt-4">Tools & Platforms</h3>
+                    <p class="mt-2">Git, Docker, AWS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-10 px-6 fade-in">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-[#213555]">Projects <i class="fa-solid fa-gear"></i></h2>
+            <div class="grid md:grid-cols-3 gap-6 mt-8">
+                <div class="p-4 shadow-xl rounded-xl bg-white hover:bg-[#D8C4B6]">
+                    <h3 class="text-lg font-semibold">Project 1</h3>
+                    <p class="mt-2">A modern e-commerce website with responsive design.</p>
+                </div>
+                <div class="p-4 shadow-xl rounded-xl bg-white hover:bg-[#D8C4B6]">
+                    <h3 class="text-lg font-semibold">Project 2</h3>
+                    <p class="mt-2">A portfolio website showcasing design skills.</p>
+                </div>
+                <div class="p-4 shadow-xl rounded-xl bg-white hover:bg-[#D8C4B6]">
+                    <h3 class="text-lg font-semibold">Project 3</h3>
+                    <p class="mt-2">An interactive quiz app with real-time feedback.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-10 px-6 bg-[#D8C4B6] fade-in">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-[#213555]">Experience <i class="fa-solid fa-briefcase"></i></h2>
+            <div class="grid md:grid-cols-2 gap-6 mt-8">
+                <div class="p-6 shadow-xl rounded-xl bg-white hover:bg-[#F5EFE7]">
+                    <h3 class="text-xl font-semibold">Frontend Developer</h3>
+                    <p class="mt-2">ABC Tech (2022 - Present)</p>
+                    <p class="mt-4">Developed and maintained responsive user interfaces for web applications.</p>
+                </div>
+                <div class="p-6 shadow-xl rounded-xl bg-white hover:bg-[#F5EFE7]">
+                    <h3 class="text-xl font-semibold">Web Developer Intern</h3>
+                    <p class="mt-2">XYZ Solutions (2021 - 2022)</p>
+                    <p class="mt-4">Assisted in building websites and learned industry practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="py-10 px-6 fade-in">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-[#213555]">Awards <i class="fa-solid fa-trophy"></i></h2>
+            <div class="grid md:grid-cols-3 gap-6 mt-8">
+                <div class="p-4 shadow-xl rounded-xl bg-white hover:bg-[#D8C4B6]">
+                    <h3 class="text-lg font-semibold">Best Web Developer</h3>
+                    <p class="mt-2">Awarded by Tech Expo 2023 for outstanding work in frontend development.</p>
+                </div>
+                <div class="p-4 shadow-xl rounded-xl bg-white hover:bg-[#D8C4B6]">
+                    <h3 class="text-lg font-semibold">Innovation Award</h3>
+                    <p class="mt-2">Recognized for building a unique e-commerce platform at Startup Fest 2022.</p>
+                </div>
+                <div class="p-4 shadow-xl rounded-xl bg-white hover:bg-[#D8C4B6]">
+                    <h3 class="text-lg font-semibold">Employee of the Month</h3>
+                    <p class="mt-2">Acknowledged at ABC Tech for exceptional contributions in August 2023.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-10 px-6 bg-[#3E5879] fade-in">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-[#F5EFE7]">Contact Me <i class="fa-regular fa-id-badge"></i></h2>
+            <p class="text-white mt-4">Feel free to reach out via email or connect with me on social media!</p>
+            <form class="mt-6 grid gap-4">
+                <input type="text" placeholder="Your Name" class="p-3 rounded-md shadow-md" required>
+                <input type="email" placeholder="Your Email" class="p-3 rounded-md shadow-md" required>
+                <textarea placeholder="Your Message" class="p-3 rounded-md shadow-md" rows="4" required></textarea>
+                <button type="submit" class="px-6 py-3 bg-[#213555] text-white rounded-md hover:bg-[#D8C4B6]">Send Message</button>
+            </form>
+            <div class="mt-6 flex justify-center space-x-4">
+                <a href="#" class="text-3xl text-white hover:text-[#D8C4B6]"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-3xl text-white hover:text-[#D8C4B6]"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-3xl text-white hover:text-[#D8C4B6]"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-3xl text-white hover:text-[#D8C4B6]"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-[#213555] text-white text-center">
+        <p>Developed by <strong>Ezionic</strong>. All rights reserved &copy; 2025.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
